@@ -1,13 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Raleway", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 100vw !important;
+  font-family: "Raleway", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: white;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(18, 18, 88);
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  body {
+    overflow-x: hidden !important;
+    /* width: 100vw !important; */
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    overflow-x: hidden !important;
+  }
 }
